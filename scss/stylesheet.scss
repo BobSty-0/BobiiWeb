@@ -1,0 +1,120 @@
+body {
+    text-align: center;
+    color: white;
+    background-color: #37393e;
+    fill:#37393e; 
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/*   border radius */
+$radius: 0.2rem;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.nav {
+    margin-left: 20%;
+    margin-right: 20%;
+    color: white;
+    border-bottom: 1px solid white;
+
+    &__toggle {
+        position: absolute;
+        cursor: pointer;
+        margin: 0rem 1rem;
+        right: 0;
+
+        svg {
+            width: 3rem;
+            fill: white;
+        }
+
+        .close {
+            display: none;
+        }
+
+        .menu {
+            margin-top: 0.2rem;
+        }
+    }
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__menu {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+
+        li {
+            list-style: none;
+            display: none;
+
+            &:first-child {
+                margin-right: auto;
+                display: block;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            font-size: 1.2rem;
+        }
+
+        svg {
+            width: 3rem;
+            fill: #37393e;
+        }
+    }
+}
+
+#nav__checkbox:checked ~ ul.nav__menu li {
+    display: block;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .close {
+    display: block;
+}
+
+#nav__checkbox:checked ~ label.nav__toggle .menu {
+    display: none;
+}
+
+// Desktop view
+@media only screen and (min-width: 560px) {
+    .nav {
+        &__toggle {
+            display: none;
+        }
+
+        &__menu {
+            flex-direction: row;
+
+            li {
+                display: block;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .nav {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+@media only screen and (max-width: 1250x) {
+    .nav {
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+}
