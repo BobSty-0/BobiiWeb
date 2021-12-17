@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+    color: white;
+    background-color: #37393e;
+    fill:#37393e; 
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
