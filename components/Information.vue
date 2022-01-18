@@ -1,11 +1,11 @@
 <template>
   <body>
-  <div class="navbar_header">
+  <div class="navbar">
     <a href="#">
-      <img src="../images/BobiiLogo.svg">
+      <img src="../images/BobiiLogo.svg" class="logo">
     </a>
-    <nav class="nav">
-      <ul class="nav_menu">
+    <nav class="navbar_nav">
+      <ul class="navbar_menu">
         <li><a href="#">Temp Channel</a></li>
         <li><a href="#">Watch 2 Gehter</a></li>
         <li><a href="#">Link Filter</a></li>

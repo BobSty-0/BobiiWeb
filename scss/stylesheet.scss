@@ -1,13 +1,18 @@
-:root {
-    --background: #37393e;
+.navbar{
+    color: white;
+    align-content: center;
+    &_nav{
+    li {
+        list-style-type: none;
+        a {
+            color: white;
+          }
+    }
+    }
 }
 
-.nav {
-    position: fixed;
-    text-align: center;
-    color: white;
-    z-index: 999;
-}
 .logo{
-    size: 50px;
+    width:50px;
+    align-content: center;
 }
+
