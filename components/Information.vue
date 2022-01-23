@@ -9,9 +9,7 @@
         </div>
 
         <div class="logo_text">
-          <a href ="#">
-            Bobii
-          </a>
+          <a href="#"> Bobii </a>
         </div>
       </div>
 
@@ -39,11 +37,11 @@
 @use "scss/stylesheet.scss";
 </style>
 
-<script>
-const toggleButton = document.getElementsByClassName('toggle_button')[0]
-const navbarLinks = document.getElementsByClassName('navbar_links')[0]
+<script type="application/javascript">
+  const toggleButton = document.getElementsByClassName('toggle_button')[0]
+  const navbarLinks = document.getElementsByClassName('navbar_links')[0]
 
-toggleButton.addEventListener('click', () => {
-  navbarLinks.toggle('active')
-})
-</script>>
+  toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
+  });
+</script>
